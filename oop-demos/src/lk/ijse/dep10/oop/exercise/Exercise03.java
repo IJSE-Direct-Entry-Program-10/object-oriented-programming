@@ -3,7 +3,8 @@ package lk.ijse.dep10.oop.exercise;
 public class Exercise03 {
 
     public static void main(String[] args) {
-
+        Employee e001 = new Employee(2, "Nuwan", "Supuni", "2021");
+        e001.printEmployeeDetails();
     }
 }
 
@@ -26,6 +27,11 @@ class Employee {
         this.name = name;
         this.spouse = spouse;
         System.out.println("Employee Constructor 2");
+    }
+
+    void printEmployeeDetails(){
+        System.out.printf("id=%s, name=%s, spouse's Name=%s, spouse's Contact=%s \n",
+                this.id, name, this.spouse.name, spouse.contact);
     }
 
     static{
