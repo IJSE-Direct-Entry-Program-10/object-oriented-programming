@@ -3,6 +3,9 @@ package lk.ijse.dep10.oop.exercise;
 public class Exercise03 {
 
     public static void main(String[] args) {
+        // new Employee - Done!
+        // Employee(id, name, spouseName, spouseContact)=>Employee(int,String,String,String)
+
         Employee e001 = new Employee(2, "Nuwan", "Supuni", "2021");
         e001.printEmployeeDetails();
     }
@@ -17,12 +20,17 @@ class Employee {
         System.out.println("Employee Instance Initializer");
     }
 
+    // Employee(int,String,String,String)
     public Employee(int id, String name, String spouseName, String spouseContact) {
+        // new Spouse - Done!
+        // Spouse(String, String) - Done !
         this(id, name, new Spouse(spouseName, spouseContact));
         System.out.println("Employee Constructor 1");
     }
 
+    // Employee(int,String,Spouse)
     public Employee(int id, String name, Spouse spouse) {   // All Args Constructor
+        super();
         this.id = id;
         this.name = name;
         this.spouse = spouse;
@@ -44,6 +52,7 @@ class Spouse{
     String contact;
 
     public Spouse(String name, String contact) {
+        super();
         this.name = name;
         this.contact = contact;
     }
