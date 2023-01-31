@@ -25,6 +25,7 @@ public class InstanceCreation2 {
 class Name{
     String firstName;
     public Name() {
+        super();
         System.out.println(firstName + " " + lastName);
     }
     String lastName = InstanceCreation2.name;
@@ -40,6 +41,7 @@ class Student{
     Name name = new Name();
     static String school = "IJSE";
     public Student() {
+        super();
         System.out.println(id + ", " + name.firstName + ", " + name.lastName + ", " + school);
     }
     {
