@@ -25,6 +25,13 @@ public class Exercise05 {
         for (Course course : courses) {
             System.out.println(course.id + " : " +  course.coordinator);
         }
+
+//        int x;
+//        int y = 5;
+//        if (y == 5){
+//            x = 2;
+//        }
+//        System.out.println(x);
     }
 }
 
