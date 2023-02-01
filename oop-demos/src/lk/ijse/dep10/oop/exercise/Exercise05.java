@@ -16,8 +16,8 @@ public class Exercise05 {
         System.out.println("Initializing Courses");
         Course[] courses = new Course[3];
         courses[0] = new Course("DEP", "Direct Entry Program");
-        courses[1] = new Course("CMJD", "Comprehensive Master Java Developer", "Kanishka");
-        courses[2] = new Course("GDSE", "Graduate Diploma in Software Engineering");
+//        courses[1] = new Course("CMJD", "Comprehensive Master Java Developer", "Kanishka");
+//        courses[2] = new Course("GDSE", "Graduate Diploma in Software Engineering");
         return courses;
     }
 
@@ -45,6 +45,7 @@ class Course{
     }
 
     public Course(String id, String name, String coordinator){
+        super();
         this.id = id;
         this.name = name;
         this.coordinator = coordinator;
