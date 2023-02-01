@@ -13,6 +13,7 @@ public class Exercise05 {
     }
 
     private static Course[] initializeCourses(){
+        System.out.println("Initializing Courses");
         Course[] courses = new Course[3];
         courses[0] = new Course("DEP", "Direct Entry Program");
         courses[1] = new Course("CMJD", "Comprehensive Master Java Developer");
