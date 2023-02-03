@@ -4,8 +4,9 @@ public class Inheritance {
 
     public static void main(String[] args) {
         // new Car - Done!
-        // Car();
+        // Vehicle();
         Car car = new Car();
+        car.printRegistrationNumber();
 //        System.out.println("-------------");
 //        Van van = new Van();
     }
