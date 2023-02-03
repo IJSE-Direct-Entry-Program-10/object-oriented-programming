@@ -6,7 +6,6 @@ public class Exercise04 {
 //        String s1;                              // Reference s1 = new Teacher()
 //        //Scanner s = (Scanner) new String();     // Reference s  = (Scanner) new String();
 //        Teacher t1;                             // Reference t1 = new Scanner(System.in);
-
         // new Teacher  - Done!
         // Teacher()
 
